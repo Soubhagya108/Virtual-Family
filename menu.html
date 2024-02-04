@@ -6,6 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Virtual-Family</title>
+    <link rel="stylesheet" href="menu.css">
     <meta
         content="Explore our SaaS website template designed specifically for AI Chatbots powered by ChatGPT, catering to Customer Support businesses. Elevate your AI chatbot&#x27;s capabilities with our sleek and user-friendly Webflow template, allowing you to engage, assist, and delight your customers seamlessly through AI-driven chatbots."
         name="description" />
@@ -43,12 +44,32 @@
             -moz-osx-font-smoothing: grayscale;
             -o-font-smoothing: antialiased;
         }
+        .cen{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .btn_father{
+            text-decoration: none;
+            
+        }
+        .ccc{
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
     </style>
     <script
         type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = { "currencyCode": "USD", "symbol": "$", "decimal": ".", "fractionDigits": 2, "group": ",", "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}", "hideDecimalForWholeNumbers": false };</script>
 </head>
 
 <body>
+
+    
+
+
+
     <div class="page-wrapper">
         <section class="section-login background-gradient-dot">
             <div class="padding-global">
@@ -56,10 +77,14 @@
                     <div class="login-navbar"><a href="index.html" class="login-logo-link w-nav-brand"><img
                                 src="Untitled_design__1_-removebg-preview.png"
                                 loading="lazy" width="162" alt="Logo" /></a>
+
+                            
+
+
                         <div><span class="hide-mobile-landscape">Don&#x27;t have an account?</span> <a href="#"
                                 class="text-style-link">Sign up</a></div>
                     </div>
-                    <div class="max-width-small align-center">
+                    <!-- <div class="max-width-small align-center">
                         <div class="form-wrapper">
                             <div class="margin-bottom margin-large">
                                 <div class="text-align-center">
@@ -67,12 +92,27 @@
                                         <h1 class="heading-style-h2">Log In</h1>
                                     </div>
                                     <p class="text-size-medium">Kaise ho beta ?</p>
+                                    <div class="cen">
+                                                <button> <a href="boxchat.html" class="btn_father">Virtual-Father</a>
+                                                </button>
+                                            </div>
+                                </div> -->
+                                <div class="ccc">Whom do you want to talk?</div>
+                                <div class="cen">
+                
+                                    <button> <a href="http://127.0.0.1:5000/" class="btn_father">Virtual-Father</a>
+                                    </button> &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <button> <a href="http://127.0.0.1:5000" class="btn_father">Virtual-Mom</a>
+                                    </button>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <button> <a href="http://127.0.0.1:5000" class="btn_father">Virtual-Friend</a>
+                                    </button>&nbsp;&nbsp;&nbsp;&nbsp;
                                 </div>
+
                             </div>
-                            <div class="login-form-block w-form">
+                            <!-- <div class="login-form-block w-form">
                                 <form id="wf-form-Log-in-Form-3" name="wf-form-Log-in-Form-3" data-name="Log in Form"
                                     method="get" class="login-form" data-wf-page-id="64f553f85bb72ff5c7080cb9"
-                                    data-wf-element-id="397d4de3-b653-b090-e3e6-3d6941f74290 " action="menu.html">
+                                    data-wf-element-id="397d4de3-b653-b090-e3e6-3d6941f74290 " action="boxchat.html">
                                     <div class="form-field-wrapper"><input class="form-input w-input" maxlength="256"
                                             name="Log-In-Form-Email" data-name="Log In Form Email" placeholder="Email"
                                             type="email" id="Log-In-Form-Email-2" required="" /></div>
@@ -85,8 +125,8 @@
                                     <div id="w-node-_397d4de3-b653-b090-e3e6-3d6941f74296-c7080cb9"
                                         class="padding-vertical padding-xsmall">
                                         <div class="line-divider"></div>
-                                    </div>
-                                    <div id="w-node-_397d4de3-b653-b090-e3e6-3d6941f74298-c7080cb9"
+                                    </div> -->
+                                    <!--  <div id="w-node-_397d4de3-b653-b090-e3e6-3d6941f74298-c7080cb9"
                                         class="w-layout-grid form-button-wrapper"><a
                                             id="w-node-_397d4de3-b653-b090-e3e6-3d6941f74299-c7080cb9" href="#"
                                             class="button is-secondary is-icon w-inline-block">
@@ -96,8 +136,8 @@
                                                         d="M21.5 11.79C21.5 15.94 19.29 21 12.63 21C7.62461 21.0332 3.53852 17.0053 3.5 12C3.53852 6.99461 7.62461 2.9667 12.63 2.99996C14.7007 3.00764 16.7085 3.71213 18.33 4.99996C18.442 5.09149 18.5109 5.22557 18.52 5.36996C18.5206 5.51605 18.463 5.65637 18.36 5.75996C17.709 6.35516 17.0882 6.98261 16.5 7.63996C16.3289 7.82826 16.0422 7.85432 15.84 7.69996C14.9161 7.01624 13.7888 6.66394 12.64 6.69996C9.68528 6.69996 7.29 9.09524 7.29 12.05C7.29 15.0047 9.68528 17.4 12.64 17.4C15.64 17.4 16.91 16.12 17.57 13.85H13C12.7239 13.85 12.5 13.6261 12.5 13.35V10.7C12.5 10.4238 12.7239 10.2 13 10.2H21C21.2302 10.1985 21.4244 10.3711 21.45 10.6C21.4871 10.9955 21.5038 11.3927 21.5 11.79Z"
                                                         fill="currentColor" />
                                                 </svg></div>
-                                            <div>Log in with Google</div>
-                                        </a><a id="w-node-_397d4de3-b653-b090-e3e6-3d6941f7429d-c7080cb9" href="#"
+                                            <div>Log in with Google</div> -->
+                                        <!-- </a><a id="w-node-_397d4de3-b653-b090-e3e6-3d6941f7429d-c7080cb9" href="#"
                                             class="button is-secondary is-icon w-inline-block">
                                             <div class="icon-embed-xsmall w-embed"><svg width="100%" height="100%"
                                                     viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +154,8 @@
                                                         d="M11.3462 6.56481C11.4594 6.66462 11.6104 6.7103 11.76 6.68997C12.7611 6.50537 13.6566 5.95234 14.27 5.13997C14.8664 4.38728 15.2156 3.46873 15.27 2.50997C15.2745 2.35109 15.2046 2.19921 15.0811 2.09921C14.9576 1.9992 14.7945 1.96251 14.64 1.99997C13.6751 2.25193 12.8121 2.79697 12.17 3.55997C11.5599 4.29704 11.2086 5.21395 11.17 6.16997C11.1686 6.32091 11.2329 6.465 11.3462 6.56481ZM18.7025 9.22549C18.1109 9.78066 17.18 10.6542 17.18 12.51C17.1661 14.1669 18.076 15.6938 19.54 16.47C19.7211 16.5518 19.8382 16.7313 19.84 16.93C19.84 17 17.74 22 15.22 22C14.6683 22 14.3006 21.8261 13.8979 21.6357C13.41 21.405 12.8705 21.15 11.89 21.15C10.9236 21.15 10.3828 21.3977 9.88507 21.6257C9.46094 21.82 9.06815 22 8.47001 22C6.15001 22 3.00001 17.14 3.00001 12.75C2.96015 11.51 3.26846 10.2837 3.89001 9.20997C4.76661 7.7243 6.32762 6.77494 8.05001 6.67997C8.86168 6.67997 9.52612 6.91887 10.1546 7.14484C10.7186 7.34761 11.2536 7.53997 11.84 7.53997C12.3999 7.53997 12.8517 7.36465 13.3473 7.17233C13.9495 6.9387 14.6163 6.67997 15.62 6.67997C17.45 6.67997 19.18 7.99997 19.18 8.58997C19.18 8.77744 18.9781 8.96693 18.7025 9.22549Z"
                                                         fill="currentColor" />
                                                 </svg></div>
-                                            <div>Log in with Apple</div>
+                                            <div>Log in with Apple</div>  -->
+                                            
                                         </a></div>
                                 </form>
                                 <div class="success-message w-form-done">
@@ -123,9 +164,9 @@
                                 <div class="error-message w-form-fail">
                                     <div class="error-text">Oops! Something went wrong while submitting the form.</div>
                                 </div>
-                                <div class="margin-top margin-small">
+                                <!-- <div class="margin-top margin-small">
                                     <div class="text-align-center"><a href="/">Forgot your password?</a></div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
